@@ -10,7 +10,7 @@ const reducer = (state, action) => {
         case "plus":
             return {... state, value: state.value + action.payload};
         case "toggle":
-            return {... state, showMessage: true};
+            return {... state, showMessage: action.payload};
         default:
             return state
     }
